@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20" viewBox="0 0 200 20">
+  <defs>
+    <linearGradient id="grad-oxfmt" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <style>
+      .track { fill: #e5e7eb; }
+      @media (prefers-color-scheme: dark) {
+        .track { fill: #21262d; }
+      }
+    </style>
+  </defs>
+  <rect class="track" width="200" height="20" rx="10" />
+  <rect width="14" height="20" rx="10" fill="url(#grad-oxfmt)">
+    <animate attributeName="width" from="0" to="14" dur="1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
+  </rect>
+</svg>

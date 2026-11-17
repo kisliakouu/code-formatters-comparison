@@ -23,9 +23,9 @@ Benchmark results formatting the minified test suite (`dist.min.js`):
 
 | Formatter | Time Bar | Execution Time | Speedup vs Prettier | Engine / Language |
 | :--- | :--- | :---: | :---: | :---: |
-| **oxfmt** | `[▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱]` | **650 ms** | **~17.0x faster** | Rust ([Oxc](https://oxc.rs/)) |
-| **Biome** | `[▰▰▰▰▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱]` | **5.0 s** | **~2.2x faster** | Rust ([Biome](https://biomejs.dev/)) |
-| **Prettier** | `[▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰]` | **11.0 s** | *Baseline (1.0x)* | JavaScript / Node.js ([Prettier](https://prettier.io/)) |
+| **oxfmt** | ![oxfmt time](assets/oxfmt-bar.svg) | **650 ms** | **~17.0x faster** | Rust ([Oxc](https://oxc.rs/)) |
+| **Biome** | ![Biome time](assets/biome-bar.svg) | **5.0 s** | **~2.2x faster** | Rust ([Biome](https://biomejs.dev/)) |
+| **Prettier** | ![Prettier time](assets/prettier-bar.svg) | **11.0 s** | *Baseline (1.0x)* | JavaScript / Node.js ([Prettier](https://prettier.io/)) |
 
 > *Note: Relative time bars are scaled proportionally to execution duration (lower is better).*
 
