@@ -1,0 +1,33 @@
+{
+  "name": "code-formatters-comparison",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/kisliakouu/code-formatters-comparison#readme",
+  "bugs": {
+    "url": "https://github.com/kisliakouu/code-formatters-comparison/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kisliakouu/code-formatters-comparison.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist.js",
+  "scripts": {
+    "clear": "rm -rf dist.js dist.min.js",
+    "prepare:single-file": "sh scripts/prepare-dist.sh source.js dist.js && esbuild dist.js --minify --outfile=dist.min.js",
+    "prettier:write": "prettier --write dist.min.js",
+    "oxfmt:write": "oxfmt --write dist.min.js",
+    "biome:write": "biome format --write dist.min.js",
+    "test:prettier": "npm run clear && npm run prepare:single-file && npm run prettier:write",
+    "test:oxfmt": "npm run clear && npm run prepare:single-file && npm run oxfmt:write",
+    "test:biome": "npm run clear && npm run prepare:single-file && npm run biome:write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.8",
+    "esbuild": "^0.28.2",
+    "oxfmt": "^0.79.0",
+    "prettier": "^3.10.1"
+  }
+}
